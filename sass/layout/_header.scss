@@ -1,0 +1,43 @@
+.hero-header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,  rgba($color-primary-light, 0.7), rgba($color-primary-dark, 0.7)), url("../img/hero.jpg") ;
+    background-size: cover;
+    background-position: top center;
+    background-origin: border-box;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    
+    @include responsive(tab-port){
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 70%);
+    }
+
+    &__brand img{
+        height: 3.5rem;
+        margin: 5rem;
+    }
+    
+    &__text{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        align-self: center;
+
+        &--main{
+            font-size: 5.5rem;
+            font-weight: lighter;
+            letter-spacing: 1.5rem;
+            animation-name: moveLeft__FadeIn;
+            animation-duration: 2s;
+        }
+        
+        &--sub{
+            font-weight: bold;
+            letter-spacing: 1.3rem;
+            animation-name: moveRight__FadeIn;
+            animation-duration: 2s;
+        }
+    }
+}

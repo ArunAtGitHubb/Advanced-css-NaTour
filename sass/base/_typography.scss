@@ -1,0 +1,36 @@
+.heading-secondary{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all .2s;
+
+    &:hover{
+        text-shadow: 1px 6px 5px rgba(black, .2);
+        transform: skewX(15deg) skewY(1deg) scale(1.1);
+    }
+}
+
+.section-about__detail{
+    text-align: left;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.section-about__detail-heading-secondary{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.section-about__detail-text{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.light_text{
+    font-weight: lighter;
+}

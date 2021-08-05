@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 80%; 
+    scroll-behavior: smooth;
+
+    
+    @include responsive(laptop){
+        font-size: 62.5%;
+    }
+
+    @include responsive(tab-land){
+        font-size: 56.25%;
+    }
+
+    @include responsive(tab-port){
+        font-size: 50%; 
+    }
+
+    @include responsive(phone){
+        font-size: 35.5%; // 1rem = 6px 6/16 = 37.5%
+    }
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #777;
+    padding: 1.8rem;
+
+    @include responsive(tab-port){
+        padding: 0;
+    }
+}
